@@ -65,6 +65,7 @@
     <Compile Include="Features\FeatureProperties.cs" />
     <Compile Include="LearningModel.cs" />
     <Compile Include="Math\Functions\ClippedRectifiedLinear.cs" />
+    <Compile Include="Math\Functions\Softplus.cs" />
     <Compile Include="Math\Functions\Softmax.cs" />
     <Compile Include="Math\Functions\SteepLogistic.cs" />
     <Compile Include="Math\Functions\RectifiedLinear.cs" />

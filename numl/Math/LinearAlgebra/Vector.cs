@@ -322,7 +322,7 @@ namespace numl.Math.LinearAlgebra
                 throw new InvalidOperationException("Cannot serialize a vector that is a matrix reference!");
 
             writer.WriteAttributeString("size", _vector.Length.ToString());
-            writer.WriteValue(string.Join(", ", _vector.Select(s => string.Format("{0:R}", s))));
+            writer.WriteValue("[" + string.Join(", ", _vector.Select(s => string.Format("{0:R}", s))) + "]");
         }
 
         /// <summary>The empty.</summary>

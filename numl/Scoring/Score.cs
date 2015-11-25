@@ -204,6 +204,9 @@ namespace numl.Scoring
         /// <returns></returns>
         public static Score ScorePredictions(Vector predictions, Vector actual)
         {
+            if (predictions.Count() != actual.Count())
+                throw new ArgumentException($"Length mismatch between the {nameof(predictions)} vector and the {nameof(actual)} vector");
+
             // TODO: This may not be computing correctly.
             var score = new numl.Scoring.Score()
             {
